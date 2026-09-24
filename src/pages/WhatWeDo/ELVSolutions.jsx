@@ -20,13 +20,13 @@ export function ELVSolutions() {
 
   const getSubsystemIcon = (idx) => {
     switch (idx) {
-      case 0: return <Cctv size={26} className="text-[#00cfff]" />;
-      case 1: return <Megaphone size={26} className="text-[#00cfff]" />;
-      case 2: return <Flame size={26} className="text-[#00cfff]" />;
-      case 3: return <DoorClosed size={26} className="text-[#00cfff]" />;
-      case 4: return <Network size={26} className="text-[#00cfff]" />;
-      case 5: return <Building2 size={26} className="text-[#00cfff]" />;
-      default: return <ShieldCheck size={26} className="text-[#00cfff]" />;
+      case 0: return <Cctv size={26} className="text-[#F8B83A]" />;
+      case 1: return <Megaphone size={26} className="text-[#F8B83A]" />;
+      case 2: return <Flame size={26} className="text-[#F8B83A]" />;
+      case 3: return <DoorClosed size={26} className="text-[#F8B83A]" />;
+      case 4: return <Network size={26} className="text-[#F8B83A]" />;
+      case 5: return <Building2 size={26} className="text-[#F8B83A]" />;
+      default: return <ShieldCheck size={26} className="text-[#F8B83A]" />;
     }
   };
 
@@ -51,26 +51,24 @@ export function ELVSolutions() {
         {/* Hero Section */}
         <section className="py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#0A1628] via-[#0d213a] to-[#0A1628] text-white text-center relative overflow-hidden">
           <div className="max-w-3xl mx-auto relative z-10">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-primary-blue/20 text-[#00cfff] text-xs font-bold uppercase tracking-wider mb-6 border border-primary-blue/30">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-primary-blue/20 text-[#F8B83A] text-xs font-bold uppercase tracking-wider mb-6 border border-primary-blue/30">
               Extra Low Voltage Infrastructure
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-4">
               {data.heroTitle}
             </h1>
-            <p className="text-xl sm:text-2xl font-medium text-[#45A8BD] mb-8">
+            <p className="text-xl sm:text-2xl font-medium text-[#F1613E] mb-8">
               {data.heroSubtitle}
             </p>
             <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-2xl mx-auto">
               Integrated building management, CCTV surveillance, access control, and fire detection systems aligned to enterprise governance and safety.
             </p>
-            <a 
-              href="https://signellent.com/contact/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-blue to-[#00cfff] text-white font-bold text-sm rounded-xl shadow-xl hover:brightness-110 transition-all"
+            <Link 
+              to="/contact" 
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-blue to-[#F1613E] text-white font-bold text-sm rounded-xl shadow-xl hover:brightness-110 transition-all"
             >
               Consult ELV Engineer <ArrowRight size={16} />
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -146,14 +144,12 @@ export function ELVSolutions() {
             <p className="text-gray-300 text-sm mb-6">
               Connect with Signellent for compliant, high-availability ELV system design, OEM procurement, and ongoing AMC management.
             </p>
-            <a 
-              href="https://signellent.com/contact/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-primary-blue to-[#00cfff] text-white font-semibold text-sm rounded-lg shadow-md hover:brightness-110 transition-all"
+            <Link 
+              to="/contact" 
+              className="inline-flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-primary-blue to-[#F1613E] text-white font-semibold text-sm rounded-lg shadow-md hover:brightness-110 transition-all"
             >
               Enquire Now <ArrowRight size={16} />
-            </a>
+            </Link>
           </div>
         </section>
       </main>

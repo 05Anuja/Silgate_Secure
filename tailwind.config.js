@@ -7,11 +7,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary-blue': '#21A0E0',
-        'primary-teal': '#45A8BD',
-        'primary-seafoam': '#6AB09B',
-        'primary-light-green': '#8EB778',
-        'primary-yellow-green': '#B2BF55',
+        // Silgate Brand Palette
+        'silgate-blue': '#0B5095',
+        'silgate-blue-dark': '#083D73',
+        'silgate-blue-light': '#1673C7',
+        'silgate-orange': '#F1613E',
+        'silgate-orange-dark': '#D94E2C',
+        'silgate-gold': '#F8B83A',
+        'silgate-amber': '#F48E33',
+        'silgate-black': '#111111',
+        // Existing tokens mapped to Silgate Brand
+        'primary-blue': '#0B5095',
+        'primary-teal': '#1673C7',
+        'primary-seafoam': '#F8B83A',
+        'primary-light-green': '#F48E33',
+        'primary-yellow-green': '#F1613E',
         'dark-navy': '#0A1628',
         'text-gray': '#64748B',
         'light-gray': '#F5F7FA',

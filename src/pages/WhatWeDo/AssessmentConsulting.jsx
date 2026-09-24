@@ -39,14 +39,12 @@ export function AssessmentConsulting() {
               {data.description}
             </p>
             <div>
-              <a 
-                href={data.ctaHref} 
-                target="_blank" 
-                rel="noopener noreferrer"
+              <Link 
+                to={data.ctaHref} 
                 className="inline-flex items-center gap-2 px-8 py-3.5 bg-primary-blue text-white font-semibold text-sm rounded-lg shadow-lg shadow-primary-blue/20 hover:bg-primary-blue/90 transition-all"
               >
                 {data.ctaText} <ArrowRight size={16} />
-              </a>
+              </Link>
             </div>
           </div>
         </section>

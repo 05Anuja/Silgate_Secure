@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // import { RAKSHNET_VIDEO_URL } from '../utils/constants';
 import video from '../../public/video/Silgate_Secure_video_event.mp4';
 import { heroData } from '../data/rakshnetData';
@@ -31,12 +32,12 @@ export function Hero() {
           </p>
           
           <div className="hero-cta">
-            <a href={heroData.scheduleHref} className="btn btn-primary">
+            <Link to={heroData.scheduleHref} className="btn btn-primary">
               Schedule Consultation
               <svg className="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                 <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-            </a>
+            </Link>
             <a href={heroData.whitepaperHref} className="btn btn-secondary">
               Download Whitepaper
               <svg className="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">

@@ -46,17 +46,17 @@ export const navData = {
       { name: "Printers", href: "/product-category/smart-utilities/printers" }
     ]
   },
-  brandsHref: "https://signellent.com/brands/",
-  careersHref: "https://signellent.com/career/",
-  enquireHref: "https://signellent.com/contact/"
+  brandsHref: "/brands",
+  careersHref: "/careers",
+  enquireHref: "/contact"
 };
 
 export const heroData = {
   badge: "SOVEREIGN CYBER DEFENSE PLATFORM",
   titleMain: "Secure Your Digital",
-  titleGradient: "Sovereignty with RakshNet",
+  titleGradient: "Sovereignty with Silgate Secure",
   description: "India's first comprehensive sovereign cyber defense platform designed to protect critical infrastructure, government networks, and national digital assets with military-grade security and AI-powered threat intelligence.",
-  scheduleHref: "https://signellent.com/contact/",
+  scheduleHref: "/contact",
   whitepaperHref: "#"
 };
 
@@ -362,31 +362,31 @@ export const applicationsData = {
     {
       title: "Government Networks",
       description: "Secure central and state government digital infrastructure, protecting citizen data, administrative systems, and inter-departmental communications.",
-      color: "#21A0E0",
+      color: "#0B5095",
       iconType: "building"
     },
     {
       title: "Defense Systems",
       description: "Military-grade protection for defense networks, command systems, and classified communications with highest security clearance.",
-      color: "#45A8BD",
+      color: "#1673C7",
       iconType: "shield"
     },
     {
       title: "Financial Institutions",
       description: "Protect banking infrastructure, payment systems, and financial data with RBI-compliant security frameworks and real-time fraud detection.",
-      color: "#6AB09B",
+      color: "#F8B83A",
       iconType: "creditCard"
     },
     {
       title: "Critical Infrastructure",
       description: "Safeguard power grids, water systems, transportation networks, and telecommunications infrastructure from cyber threats.",
-      color: "#8EB778",
+      color: "#F48E33",
       iconType: "clock"
     },
     {
       title: "Healthcare Systems",
       description: "Secure patient data, medical records, and healthcare infrastructure while ensuring HIPAA and Indian healthcare regulations compliance.",
-      color: "#B2BF55",
+      color: "#F1613E",
       iconType: "checkCircle"
     }
   ]
@@ -409,39 +409,40 @@ export const technologyData = {
 export const finalCTAData = {
   title: "Ready to Secure India's Digital Future?",
   description: "Join leading government agencies, defense organizations, and critical infrastructure providers in protecting India's digital sovereignty with RakshNet.",
-  scheduleHref: "https://signellent.com/contact/",
+  scheduleHref: "/contact",
   whitepaperHref: "#"
 };
 
 export const footerData = {
   whatWeDo: [
-    { name: "Assessment & Consulting", href: "https://signellent.com/what-we-do/services/assessment-counsulting/" },
-    { name: "Managed Services", href: "https://signellent.com/what-we-do/services/managed-services/" },
-    { name: "Security", href: "https://signellent.com/what-we-do/services/cyber-security/" },
-    { name: "Next Gen Networks", href: "https://signellent.com/what-we-do/services/next-gen-network/" },
-    { name: "AI Driven Solutions", href: "https://signellent.com/what-we-do/services/ai-driven-solutions/" },
-    { name: "Smart Solutions", href: "https://signellent.com/what-we-do/services/smart-solutions/" },
-    { name: "Unified Collaboration & Communication", href: "https://signellent.com/what-we-do/services/unified-collaboration-communication/" },
-    { name: "ELV Solutions", href: "https://signellent.com/what-we-do/services/elv/" }
+    { name: "Assessment & Consulting", href: "/what-we-do/services/assessment-counsulting" },
+    { name: "Managed Services", href: "/what-we-do/services/managed-services" },
+    { name: "Security", href: "/what-we-do/services/cyber-security" },
+    { name: "Next Gen Networks", href: "/what-we-do/services/next-gen-network" },
+    { name: "AI Driven Solutions", href: "/what-we-do/services/ai-driven-solutions" },
+    { name: "Smart Solutions", href: "/what-we-do/services/smart-solutions" },
+    { name: "Unified Collaboration & Communication", href: "/what-we-do/services/unified-collaboration-communication" },
+    { name: "ELV Solutions", href: "/what-we-do/services/elv" }
   ],
   usefulLinks: [
-    { name: "Brands", href: "https://signellent.com/brands/" },
-    { name: "Careers", href: "https://signellent.com/career/" },
+    { name: "Contact Us", href: "/contact" },
+    { name: "Brands", href: "/brands" },
+    { name: "Careers", href: "/careers" },
     { name: "RakshNet", href: "/rakshnet/" },
-    { name: "PRIME", href: "https://signellent.com/prime/" },
-    { name: "Who We Are", href: "https://signellent.com/about-us/" },
-    { name: "Privacy Policy", href: "https://signellent.com/privacy-policy/" }
+    { name: "PRIME", href: "/prime" },
+    { name: "Who We Are", href: "/about-us" },
+    { name: "Privacy Policy", href: "/privacy-policy" }
   ],
   getInTouch: {
-    email: "info@signellent.com",
-    phone: "+91 9967 730 225"
+    email: "manoj@silgatehhiring.com",
+    phone: "+91 8108810916"
   },
   social: [
-    { name: "LinkedIn", href: "https://www.linkedin.com/company/signellent-technologies-pvt-ltd/" },
-    { name: "Twitter", href: "https://twitter.com/signellent" },
-    { name: "Facebook", href: "https://www.facebook.com/signellent" },
-    { name: "YouTube", href: "https://www.youtube.com/channel/UC-qK_fUvI5L4n0o_E01J6pA" },
-    { name: "Instagram", href: "https://www.instagram.com/signellent_technologies/" }
+    { name: "LinkedIn", href: "https://www.linkedin.com/" },
+    { name: "Twitter", href: "https://twitter.com/" },
+    { name: "Facebook", href: "https://www.facebook.com/" },
+    { name: "YouTube", href: "https://www.youtube.com/" },
+    { name: "Instagram", href: "https://www.instagram.com/" }
   ],
   indiaOffice: {
     name: "India head Office :",

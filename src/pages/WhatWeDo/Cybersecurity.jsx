@@ -20,11 +20,11 @@ export function Cybersecurity() {
 
   const getCapabilityIcon = (idx) => {
     switch (idx) {
-      case 0: return <Fingerprint size={28} className="text-[#00cfff]" />;
-      case 1: return <KeyRound size={28} className="text-[#00cfff]" />;
-      case 2: return <Lock size={28} className="text-[#00cfff]" />;
-      case 3: return <Cpu size={28} className="text-[#00cfff]" />;
-      default: return <ShieldCheck size={28} className="text-[#00cfff]" />;
+      case 0: return <Fingerprint size={28} className="text-[#F8B83A]" />;
+      case 1: return <KeyRound size={28} className="text-[#F8B83A]" />;
+      case 2: return <Lock size={28} className="text-[#F8B83A]" />;
+      case 3: return <Cpu size={28} className="text-[#F8B83A]" />;
+      default: return <ShieldCheck size={28} className="text-[#F8B83A]" />;
     }
   };
 
@@ -48,30 +48,28 @@ export function Cybersecurity() {
 
         {/* Hero Section */}
         <section className="py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#0A1628] via-[#0d1e38] to-[#0A1628] text-white relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(33,160,224,0.12)_0%,transparent_50%)] pointer-events-none" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(11,80,149,0.2)_0%,transparent_50%)] pointer-events-none" />
           <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
             <div className="lg:col-span-7">
-              <span className="inline-block px-4 py-1.5 rounded-full bg-primary-blue/20 text-[#00cfff] text-xs font-bold uppercase tracking-wider mb-6 border border-primary-blue/30">
+              <span className="inline-block px-4 py-1.5 rounded-full bg-primary-blue/20 text-[#F8B83A] text-xs font-bold uppercase tracking-wider mb-6 border border-primary-blue/30">
                 Identity-First Security
               </span>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">
                 {data.heroTitle}
               </h1>
-              <p className="text-lg font-semibold text-[#45A8BD] mb-6">
+              <p className="text-lg font-semibold text-[#F1613E] mb-6">
                 {data.heroSubtitle}
               </p>
               <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-2xl">
                 {data.heroDescription}
               </p>
               <div>
-                <a 
-                  href="https://signellent.com/contact/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-blue to-[#45A8BD] text-white font-bold text-sm rounded-xl shadow-lg hover:brightness-110 transition-all"
+                <Link 
+                  to="/contact" 
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-blue to-[#F1613E] text-white font-bold text-sm rounded-xl shadow-lg hover:brightness-110 transition-all"
                 >
                   Consult Cyber Security Architect <ArrowRight size={16} />
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -178,7 +176,7 @@ export function Cybersecurity() {
                   key={idx}
                   className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-primary-blue/60 transition-all text-center"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-primary-blue/20 text-[#00cfff] flex items-center justify-center mx-auto mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-primary-blue/20 text-[#F8B83A] flex items-center justify-center mx-auto mb-4">
                     <CheckCircle2 size={24} />
                   </div>
                   <h3 className="font-heading font-bold text-base text-white mb-2">
@@ -202,14 +200,12 @@ export function Cybersecurity() {
             <p className="text-gray-600 text-sm mb-6">
               Connect with our certified cybersecurity team for comprehensive vulnerability assessments and SASE architecture planning.
             </p>
-            <a 
-              href="https://signellent.com/contact/" 
-              target="_blank" 
-              rel="noopener noreferrer"
+            <Link 
+              to="/contact" 
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-primary-blue text-white font-semibold text-sm rounded-lg shadow-md hover:bg-primary-blue/90 transition-all"
             >
               Enquire Now <ArrowRight size={16} />
-            </a>
+            </Link>
           </div>
         </section>
       </main>

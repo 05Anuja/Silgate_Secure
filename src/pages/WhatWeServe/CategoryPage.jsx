@@ -50,7 +50,7 @@ export function CategoryPage() {
           <h1 className="text-3xl md:text-4xl font-extrabold text-[#0d1117] tracking-tight mb-3">
             {data.title}
           </h1>
-          <div className="w-12 h-1 bg-[#00cfff] rounded-full" />
+          <div className="w-12 h-1 bg-[#F1613E] rounded-full" />
         </div>
 
         {/* Subcategories Grid */}
@@ -60,7 +60,7 @@ export function CategoryPage() {
               {data.subcategories.map((item, idx) => (
                 <div 
                   key={idx}
-                  className="bg-white border border-[#e8ecf2] rounded-xl p-6 text-center hover:border-primary-blue hover:shadow-[0_10px_32px_rgba(0,207,255,0.15)] hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between items-center min-h-[280px]"
+                  className="bg-white border border-[#e8ecf2] rounded-xl p-6 text-center hover:border-primary-blue hover:shadow-[0_10px_32px_rgba(11,80,149,0.15)] hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between items-center min-h-[280px]"
                 >
                   <div className="w-full flex-1 flex items-center justify-center p-4">
                     {item.img ? (
@@ -97,14 +97,12 @@ export function CategoryPage() {
             <p className="text-gray-500 max-w-md mx-auto text-sm mb-6">
               Explore custom architectures, technical datasheets, and enterprise deployment options with our certified network engineers.
             </p>
-            <a 
-              href="https://signellent.com/contact/" 
-              target="_blank" 
-              rel="noopener noreferrer"
+            <Link 
+              to="/contact" 
               className="inline-flex items-center gap-2 px-6 py-2.5 bg-primary-blue text-white text-sm font-semibold rounded-lg hover:bg-primary-blue/90 shadow-md shadow-primary-blue/20 transition-all"
             >
               Request Datasheet / Enquiry
-            </a>
+            </Link>
           </div>
         )}
 
@@ -129,14 +127,12 @@ export function CategoryPage() {
                   <h4 className="font-heading font-semibold text-sm text-dark-navy line-clamp-2 mb-2">
                     {prod.title}
                   </h4>
-                  <a 
-                    href="https://signellent.com/contact/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
+                  <Link 
+                    to="/contact" 
                     className="inline-block text-xs font-semibold text-primary-blue hover:underline mt-2"
                   >
                     Enquire Now →
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>
@@ -147,7 +143,7 @@ export function CategoryPage() {
         <section className="bg-gradient-to-r from-dark-navy to-[#1a2942] rounded-2xl p-8 md:p-12 text-white mb-12 shadow-xl relative overflow-hidden">
           <div className="absolute top-0 right-0 w-96 h-96 bg-primary-blue/10 rounded-full blur-3xl pointer-events-none" />
           <div className="relative z-10 max-w-3xl">
-            <span className="inline-block px-3 py-1 bg-primary-blue/20 text-[#00cfff] text-xs font-semibold uppercase tracking-wider rounded-full mb-4 border border-primary-blue/30">
+            <span className="inline-block px-3 py-1 bg-primary-blue/20 text-[#F8B83A] text-xs font-semibold uppercase tracking-wider rounded-full mb-4 border border-primary-blue/30">
               Enterprise Procurement & Deployment
             </span>
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
@@ -157,14 +153,12 @@ export function CategoryPage() {
               Signellent is an authorized distributor and tier-1 system integrator for Cisco, Fortinet, Ruckus, Sophos, Ubiquiti, and Bosch across India. Contact our certified solution architects for design validation, proof-of-concept units, and official quotations.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a 
-                href="https://signellent.com/contact/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="px-6 py-3 bg-gradient-to-r from-primary-blue to-[#00cfff] text-white font-semibold text-sm rounded-lg shadow-lg hover:brightness-110 transition-all"
+              <Link 
+                to="/contact" 
+                className="px-6 py-3 bg-gradient-to-r from-primary-blue to-[#F1613E] text-white font-semibold text-sm rounded-lg shadow-lg hover:brightness-110 transition-all"
               >
                 Connect With Specialist
-              </a>
+              </Link>
               <a 
                 href="tel:+918080004545" 
                 className="px-6 py-3 bg-white/10 hover:bg-white/15 text-white font-semibold text-sm rounded-lg border border-white/20 transition-all flex items-center gap-2"

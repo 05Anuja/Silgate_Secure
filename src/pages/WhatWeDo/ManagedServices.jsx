@@ -39,7 +39,7 @@ export function ManagedServices() {
 
         {/* Hero Section with Dark Theme & Mesh Gradient */}
         <section className="relative overflow-hidden bg-gradient-to-b from-[#0A1628] via-[#102038] to-[#0A1628] text-white py-20 lg:py-28 px-4 sm:px-6 lg:px-8">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(33,160,224,0.15)_0%,transparent_50%)] pointer-events-none" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(11,80,149,0.2)_0%,transparent_50%)] pointer-events-none" />
           <div className="max-w-[1400px] mx-auto relative z-10 text-center max-w-4xl mx-auto">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-blue/20 border border-primary-blue/40 text-primary-blue text-xs font-bold tracking-wider uppercase mb-6">
               {data.badge}
@@ -47,7 +47,7 @@ export function ManagedServices() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15] mb-4">
               {data.heroTitle}
             </h1>
-            <p className="text-xl sm:text-2xl font-semibold bg-gradient-to-r from-primary-blue via-[#45A8BD] to-[#00cfff] bg-clip-text text-transparent mb-6">
+            <p className="text-xl sm:text-2xl font-semibold bg-gradient-to-r from-primary-blue via-[#F8B83A] to-[#F1613E] bg-clip-text text-transparent mb-6">
               {data.heroSubtitle}
             </p>
             <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-6 max-w-3xl mx-auto">
@@ -57,14 +57,12 @@ export function ManagedServices() {
               {data.heroContext}
             </p>
             <div className="flex justify-center gap-4">
-              <a 
-                href="https://signellent.com/contact/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="px-8 py-4 bg-gradient-to-r from-primary-blue to-[#45A8BD] text-white font-bold rounded-xl shadow-lg shadow-primary-blue/30 hover:brightness-110 transition-all flex items-center gap-2"
+              <Link 
+                to="/contact" 
+                className="px-8 py-4 bg-gradient-to-r from-primary-blue to-[#F1613E] text-white font-bold rounded-xl shadow-lg shadow-primary-blue/30 hover:brightness-110 transition-all flex items-center gap-2"
               >
                 Schedule Operations Consultation <ArrowRight size={18} />
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -78,7 +76,7 @@ export function ManagedServices() {
                   key={idx}
                   className="bg-white border border-gray-200 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:border-primary-blue hover:-translate-y-1 transition-all duration-300 text-center"
                 >
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-primary-blue to-[#00cfff] flex items-center justify-center text-white mx-auto mb-6 shadow-md shadow-primary-blue/20">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-primary-blue to-[#F1613E] flex items-center justify-center text-white mx-auto mb-6 shadow-md shadow-primary-blue/20">
                     {idx === 0 && <Zap size={28} />}
                     {idx === 1 && <Shield size={28} />}
                     {idx === 2 && <TrendingUp size={28} />}
@@ -149,7 +147,7 @@ export function ManagedServices() {
                   className="p-6 rounded-2xl bg-[#F9FAFB] border border-gray-200 hover:border-primary-blue hover:bg-white hover:shadow-lg transition-all"
                 >
                   <div className="flex items-center gap-3 mb-3">
-                    <CheckCircle2 className="text-[#00cfff] flex-shrink-0" size={20} />
+                    <CheckCircle2 className="text-[#F8B83A] flex-shrink-0" size={20} />
                     <h3 className="font-heading font-bold text-base text-[#0A1628]">
                       {cov.title}
                     </h3>
@@ -212,7 +210,7 @@ export function ManagedServices() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 p-8 rounded-3xl bg-[#0A1628] text-white shadow-xl text-center">
               {data.whySignellent.stats.map((st, idx) => (
                 <div key={idx} className="p-4">
-                  <div className="font-heading font-extrabold text-4xl lg:text-5xl text-[#00cfff] mb-2">
+                  <div className="font-heading font-extrabold text-4xl lg:text-5xl text-[#F8B83A] mb-2">
                     {st.number}
                   </div>
                   <div className="text-xs uppercase tracking-wider text-gray-300 font-semibold">
@@ -250,14 +248,12 @@ export function ManagedServices() {
             <p className="text-gray-300 text-sm md:text-base mb-8 max-w-xl mx-auto">
               Partner with Signellent for guaranteed SLA adherence, proactive defense, and complete IT peace of mind.
             </p>
-            <a 
-              href="https://signellent.com/contact/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-blue to-[#00cfff] text-white font-bold text-sm rounded-xl shadow-xl hover:brightness-110 transition-all"
+            <Link 
+              to="/contact" 
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-blue to-[#F1613E] text-white font-bold text-sm rounded-xl shadow-xl hover:brightness-110 transition-all"
             >
               Enquire Now <ArrowRight size={16} />
-            </a>
+            </Link>
           </div>
         </section>
       </main>

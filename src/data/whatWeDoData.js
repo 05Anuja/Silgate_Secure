@@ -11,7 +11,7 @@ export const whatWeDoData = {
     "heading": "PRIME Framework – Our Approach to Assessment & Consulting",
     "description": "At Signellent Technologies, we believe that successful technology solutions start with a strong foundation. That’s why we’ve developed our PRIME Framework – a structured yet flexible approach that ensures every engagement delivers maximum value.",
     "ctaText": "Enquire Now",
-    "ctaHref": "https://signellent.com/contact/",
+    "ctaHref": "/contact",
     "primeStandsForHeading": "PRIME stands for:",
     "primeStandsForImage": "https://signellent.com/wp-content/uploads/2025/08/PRIME-Stands-For.png"
   },

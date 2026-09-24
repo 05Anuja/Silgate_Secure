@@ -173,38 +173,33 @@ export function MobileMenu({ isOpen, onClose }) {
           </div>
 
           {/* Brands */}
-          <a 
-            href={navData.brandsHref} 
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link 
+            to="/brands" 
             onClick={onClose}
             className="py-2.5 text-sm font-semibold text-dark-navy hover:text-primary-blue transition-colors"
           >
             Brands
-          </a>
+          </Link>
 
           {/* Careers */}
-          <a 
-            href={navData.careersHref} 
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link 
+            to="/careers" 
             onClick={onClose}
             className="py-2.5 text-sm font-semibold text-dark-navy hover:text-primary-blue transition-colors"
           >
             Careers
-          </a>
+          </Link>
         </nav>
 
         {/* CTA */}
         <div className="mt-8 pt-4 border-t border-gray-200">
-          <a 
-            href={navData.enquireHref} 
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link 
+            to="/contact" 
+            onClick={onClose}
             className="enquire-nav-btn w-full justify-center text-center !flex"
           >
             Enquire Now
-          </a>
+          </Link>
         </div>
       </div>
     </>

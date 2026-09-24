@@ -37,7 +37,7 @@ export function NextGenNetwork() {
         {/* Hero Section */}
         <section className="py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#0A1628] via-[#0f233f] to-[#0A1628] text-white text-center relative overflow-hidden">
           <div className="max-w-[1200px] mx-auto relative z-10">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-primary-blue/20 text-[#00cfff] text-xs font-bold uppercase tracking-wider mb-6 border border-primary-blue/30">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-primary-blue/20 text-[#F8B83A] text-xs font-bold uppercase tracking-wider mb-6 border border-primary-blue/30">
               {data.subtitle}
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
@@ -46,14 +46,12 @@ export function NextGenNetwork() {
             <p className="text-gray-300 text-base md:text-lg leading-relaxed max-w-2xl mx-auto mb-8">
               High-throughput architectures, software-defined fabrics, and automated resilience designed to power digital enterprises through 2030 and beyond.
             </p>
-            <a 
-              href="https://signellent.com/contact/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-blue to-[#00cfff] text-white font-bold text-sm rounded-xl shadow-xl hover:brightness-110 transition-all"
+            <Link 
+              to="/contact" 
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-blue to-[#F1613E] text-white font-bold text-sm rounded-xl shadow-xl hover:brightness-110 transition-all"
             >
               Explore Network Blueprints <ArrowRight size={16} />
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -76,7 +74,7 @@ export function NextGenNetwork() {
                   className="bg-white border border-gray-200 rounded-2xl p-8 hover:border-primary-blue hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
                 >
                   <div>
-                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-tr from-primary-blue to-[#00cfff] flex items-center justify-center font-heading font-black text-2xl text-white mb-6 shadow-md shadow-primary-blue/20">
+                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-tr from-primary-blue to-[#F1613E] flex items-center justify-center font-heading font-black text-2xl text-white mb-6 shadow-md shadow-primary-blue/20">
                       0{phase.number}
                     </div>
                     <h3 className="font-heading font-bold text-xl text-[#0A1628] mb-3">
@@ -117,7 +115,7 @@ export function NextGenNetwork() {
                   key={idx}
                   className="bg-[#F9FAFB] border border-gray-200 rounded-2xl p-8 hover:border-primary-blue hover:bg-white hover:shadow-xl transition-all duration-300"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-[#0A1628] text-[#00cfff] flex items-center justify-center mb-6 shadow-md">
+                  <div className="w-12 h-12 rounded-xl bg-[#0A1628] text-[#F8B83A] flex items-center justify-center mb-6 shadow-md">
                     {idx === 0 && <Boxes size={24} />}
                     {idx === 1 && <Cpu size={24} />}
                     {idx === 2 && <ShieldCheck size={24} />}
@@ -143,14 +141,12 @@ export function NextGenNetwork() {
             <p className="text-gray-300 text-sm mb-6">
               Connect with Signellent’s network architects for comprehensive switching audits, SD-WAN POCs, and high-density campus Wi-Fi design.
             </p>
-            <a 
-              href="https://signellent.com/contact/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-primary-blue to-[#00cfff] text-white font-semibold text-sm rounded-lg shadow-md hover:brightness-110 transition-all"
+            <Link 
+              to="/contact" 
+              className="inline-flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-primary-blue to-[#F1613E] text-white font-semibold text-sm rounded-lg shadow-md hover:brightness-110 transition-all"
             >
               Enquire Now <ArrowRight size={16} />
-            </a>
+            </Link>
           </div>
         </section>
       </main>

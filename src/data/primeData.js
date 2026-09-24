@@ -127,7 +127,7 @@ export const primeData = {
     "subtitle": "Transform. Secure. Scale.",
     "description": "No matter your stage of digital maturity, the PRIME Framework provides the clarity, control, and confidence to achieve sustainable transformation.",
     "buttonText": "Enquire Now",
-    "buttonHref": "https://signellent.com/contact/"
+    "buttonHref": "/contact"
   }
 };
 

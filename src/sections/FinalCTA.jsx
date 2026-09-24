@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { finalCTAData } from '../data/rakshnetData';
 
 export function FinalCTA() {
@@ -11,12 +12,12 @@ export function FinalCTA() {
             {finalCTAData.description}
           </p>
           <div className="cta-buttons">
-            <a href={finalCTAData.scheduleHref} className="btn btn-primary">
+            <Link to={finalCTAData.scheduleHref} className="btn btn-primary">
               Schedule Consultation
               <svg className="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                 <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-            </a>
+            </Link>
             <a href={finalCTAData.whitepaperHref} className="btn btn-secondary">
               Download Whitepaper
               <svg className="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">

@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-export function StatCard({ number, label, className = '' }) {
+export function StatCard({ number, label, className = "" }) {
   return (
     <div className={`threat-stat-item ${className}`}>
       <div className="threat-stat-number">{number}</div>

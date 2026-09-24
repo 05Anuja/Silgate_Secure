@@ -26,14 +26,14 @@ export function PrimePage() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-gradient-to-b from-[#0A1628] via-[#0e1d35] to-[#0A1628] text-white py-20 lg:py-28 px-4 sm:px-6 lg:px-8">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(33,160,224,0.15)_0%,transparent_50%)] pointer-events-none" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(11,80,149,0.2)_0%,transparent_50%)] pointer-events-none" />
           <div className="max-w-[1400px] mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             <div className="lg:col-span-7">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-blue/20 border border-primary-blue/40 text-primary-blue text-xs font-bold tracking-wider uppercase mb-6">
                 {hero.badge}
               </span>
-              <h2 className="text-lg md:text-xl font-medium text-[#45A8BD] mb-3">
+              <h2 className="text-lg md:text-xl font-medium text-[#F1613E] mb-3">
                 {hero.subtitle}
               </h2>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15] mb-6">
@@ -47,21 +47,19 @@ export function PrimePage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
                 {hero.promises.map((promise, idx) => (
                   <div key={idx} className="flex items-start gap-3 bg-white/5 border border-white/10 rounded-xl p-3.5 backdrop-blur-sm">
-                    <CheckCircle2 className="text-[#00cfff] flex-shrink-0 mt-0.5" size={18} />
+                    <CheckCircle2 className="text-[#F8B83A] flex-shrink-0 mt-0.5" size={18} />
                     <span className="text-sm font-medium text-gray-200">{promise}</span>
                   </div>
                 ))}
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <a 
-                  href="https://signellent.com/contact/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="px-8 py-4 bg-gradient-to-r from-primary-blue to-[#45A8BD] text-white font-bold rounded-xl shadow-lg shadow-primary-blue/30 hover:brightness-110 transition-all flex items-center gap-2"
+                <Link 
+                  to="/contact" 
+                  className="px-8 py-4 bg-gradient-to-r from-primary-blue to-[#F1613E] text-white font-bold rounded-xl shadow-lg shadow-primary-blue/30 hover:brightness-110 transition-all flex items-center gap-2"
                 >
                   Schedule Assessment <ArrowRight size={18} />
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -100,7 +98,7 @@ export function PrimePage() {
                   className="bg-white rounded-2xl border border-gray-200 p-6 md:p-8 shadow-sm hover:shadow-xl hover:border-primary-blue/50 transition-all duration-300 grid grid-cols-1 md:grid-cols-12 gap-6 items-center"
                 >
                   <div className="md:col-span-3 flex items-center gap-4">
-                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary-blue to-[#00cfff] flex items-center justify-center font-heading font-black text-2xl text-white shadow-md shadow-primary-blue/20 flex-shrink-0">
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary-blue to-[#F1613E] flex items-center justify-center font-heading font-black text-2xl text-white shadow-md shadow-primary-blue/20 flex-shrink-0">
                       {step.letter}
                     </div>
                     <div>
@@ -171,7 +169,7 @@ export function PrimePage() {
                   key={idx}
                   className="bg-[#F9FAFB] border border-gray-200 rounded-2xl p-8 text-center hover:border-primary-blue hover:bg-white hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300"
                 >
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-primary-blue to-[#45A8BD] flex items-center justify-center text-white mx-auto mb-6 shadow-md shadow-primary-blue/20">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-primary-blue to-[#F1613E] flex items-center justify-center text-white mx-auto mb-6 shadow-md shadow-primary-blue/20">
                     <ShieldCheck size={32} />
                   </div>
                   <h3 className="text-xl font-bold text-[#0A1628] mb-3">
@@ -194,7 +192,7 @@ export function PrimePage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                   {whyPrimeWorks.whatSetsApart.map((item, idx) => (
                     <div key={idx} className="flex items-center gap-3 p-4 rounded-xl bg-white/5 border border-white/10">
-                      <CheckCircle2 className="text-[#00cfff] flex-shrink-0" size={20} />
+                      <CheckCircle2 className="text-[#F8B83A] flex-shrink-0" size={20} />
                       <span className="text-sm font-medium text-gray-200">{item}</span>
                     </div>
                   ))}
@@ -237,7 +235,7 @@ export function PrimePage() {
         {/* CTA Banner */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#0A1628] to-[#1a2942] text-white text-center relative overflow-hidden">
           <div className="max-w-3xl mx-auto relative z-10">
-            <span className="inline-block px-4 py-1 bg-primary-blue/20 text-[#00cfff] text-xs font-bold uppercase tracking-wider rounded-full mb-4 border border-primary-blue/30">
+            <span className="inline-block px-4 py-1 bg-primary-blue/20 text-[#F8B83A] text-xs font-bold uppercase tracking-wider rounded-full mb-4 border border-primary-blue/30">
               {cta.subtitle}
             </span>
             <h2 className="text-3xl md:text-5xl font-extrabold mb-6 tracking-tight">
@@ -246,14 +244,12 @@ export function PrimePage() {
             <p className="text-gray-300 text-base md:text-lg mb-8 leading-relaxed">
               {cta.description}
             </p>
-            <a 
-              href={cta.buttonHref} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-blue to-[#00cfff] text-white font-bold text-base rounded-xl shadow-xl hover:brightness-110 transition-all"
+            <Link 
+              to={cta.buttonHref} 
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-blue to-[#F1613E] text-white font-bold text-base rounded-xl shadow-xl hover:brightness-110 transition-all"
             >
               {cta.buttonText} <ArrowRight size={18} />
-            </a>
+            </Link>
           </div>
         </section>
       </main>

@@ -10,11 +10,14 @@ export const CERTIFICATION_BADGES = [
 ];
 
 export const COLORS = {
-  primaryBlue: '#21A0E0',
-  primaryTeal: '#45A8BD',
-  primarySeafoam: '#6AB09B',
-  primaryLightGreen: '#8EB778',
-  primaryYellowGreen: '#B2BF55',
+  primaryBlue: '#0B5095',
+  primaryTeal: '#1673C7',
+  primarySeafoam: '#F8B83A',
+  primaryLightGreen: '#F48E33',
+  primaryYellowGreen: '#F1613E',
+  silgateBlue: '#0B5095',
+  silgateOrange: '#F1613E',
+  silgateGold: '#F8B83A',
   darkNavy: '#0A1628',
   white: '#FFFFFF',
   lightGray: '#F5F7FA',

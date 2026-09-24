@@ -54,14 +54,12 @@ export function SmartSolutions() {
             <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-8">
               {data.description}
             </p>
-            <a 
-              href="https://signellent.com/contact/" 
-              target="_blank" 
-              rel="noopener noreferrer"
+            <Link 
+              to="/contact" 
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-primary-blue text-white font-semibold text-sm rounded-lg shadow-md hover:bg-primary-blue/90 transition-all"
             >
               Enquire Now <ArrowRight size={16} />
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -98,14 +96,12 @@ export function SmartSolutions() {
             <p className="text-gray-300 text-sm mb-6">
               Signellent delivers end-to-end integration for display walls, commercial printers, and environmental IoT systems across enterprise premises.
             </p>
-            <a 
-              href="https://signellent.com/contact/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-primary-blue to-[#00cfff] text-white font-semibold text-sm rounded-lg shadow-md hover:brightness-110 transition-all"
+            <Link 
+              to="/contact" 
+              className="inline-flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-primary-blue to-[#F1613E] text-white font-semibold text-sm rounded-lg shadow-md hover:brightness-110 transition-all"
             >
               Contact Our Engineers <ArrowRight size={16} />
-            </a>
+            </Link>
           </div>
         </section>
       </main>

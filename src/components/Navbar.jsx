@@ -1,38 +1,46 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Search, Menu, ChevronDown, X } from 'lucide-react';
-import logo from '../../public/images/logo.png';
-import { navData } from '../data/rakshnetData';
-import MobileMenu from './MobileMenu';
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Search, Menu, ChevronDown, X } from "lucide-react";
+import logo from "../../public/images/logo.png";
+import { navData } from "../data/rakshnetData";
+import MobileMenu from "./MobileMenu";
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
   const location = useLocation();
   const currentPath = location.pathname;
 
-  const isWhatWeDoActive = currentPath.includes('/what-we-do');
-  const isWhatWeThinkActive = currentPath === '/' || currentPath.includes('/rakshnet') || currentPath.includes('/prime');
-  const isWhatWeServeActive = currentPath.includes('/product-category');
+  const isWhatWeDoActive = currentPath.includes("/what-we-do");
+  const isWhatWeThinkActive =
+    currentPath === "/" ||
+    currentPath.includes("/rakshnet") ||
+    currentPath.includes("/prime");
+  const isWhatWeServeActive = currentPath.includes("/product-category");
+  const isBrandsActive = currentPath.includes("/brands");
+  const isCareersActive = currentPath.includes("/careers");
 
-  const renderNavLink = (item, extraClasses = '') => {
-    const isInternal = item.href.startsWith('/');
-    const isActive = isInternal && (currentPath === item.href || (item.href !== '/' && currentPath.startsWith(item.href)));
+  const renderNavLink = (item, extraClasses = "") => {
+    const isInternal = item.href.startsWith("/");
+    const isActive =
+      isInternal &&
+      (currentPath === item.href ||
+        (item.href !== "/" && currentPath.startsWith(item.href)));
 
     if (isInternal) {
       return (
-        <Link 
-          to={item.href} 
-          className={`dropdown-link-item ${isActive ? '!text-primary-blue font-semibold bg-gray-50' : ''} ${extraClasses}`}
+        <Link
+          to={item.href}
+          className={`dropdown-link-item ${isActive ? "!text-primary-blue font-semibold bg-gray-50" : ""} ${extraClasses}`}
         >
           {item.name}
         </Link>
       );
     }
     return (
-      <a 
-        href={item.href} 
+      <a
+        href={item.href}
         className={`dropdown-link-item ${extraClasses}`}
         target="_blank"
         rel="noopener noreferrer"
@@ -48,10 +56,14 @@ export function Navbar() {
         <div className="header-container">
           {/* Logo */}
           <div className="flex items-center">
-            <Link to="/rakshnet/" className="header-logo-link" aria-label="Signellent Home">
-              <img 
-                src={logo} 
-                alt="Signellent Technologies" 
+            <Link
+              to="/rakshnet/"
+              className="header-logo-link"
+              aria-label="Signellent Home"
+            >
+              <img
+                src={logo}
+                alt="Signellent Technologies"
                 className="h-10 md:h-12 w-auto object-contain"
               />
             </Link>
@@ -61,7 +73,11 @@ export function Navbar() {
           <nav className="nav-desktop-menu">
             {/* What We Do */}
             <div className="nav-desktop-item">
-              <a href="#" className={`nav-desktop-link ${isWhatWeDoActive ? 'active !text-primary-blue' : ''}`} onClick={(e) => e.preventDefault()}>
+              <a
+                href="#"
+                className={`nav-desktop-link ${isWhatWeDoActive ? "active !text-primary-blue-600" : ""}`}
+                onClick={(e) => e.preventDefault()}
+              >
                 What We Do
                 <ChevronDown className="nav-desktop-arrow" />
               </a>
@@ -78,7 +94,11 @@ export function Navbar() {
 
             {/* What We Think */}
             <div className="nav-desktop-item">
-              <a href="#" className={`nav-desktop-link ${isWhatWeThinkActive ? 'active !text-primary-blue' : ''}`} onClick={(e) => e.preventDefault()}>
+              <a
+                href="#"
+                className={`nav-desktop-link ${isWhatWeThinkActive ? "active !text-primary-blue-600" : ""}`}
+                onClick={(e) => e.preventDefault()}
+              >
                 What We Think
                 <ChevronDown className="nav-desktop-arrow" />
               </a>
@@ -95,7 +115,11 @@ export function Navbar() {
 
             {/* What We Serve */}
             <div className="nav-desktop-item">
-              <a href="#" className={`nav-desktop-link ${isWhatWeServeActive ? 'active !text-primary-blue' : ''}`} onClick={(e) => e.preventDefault()}>
+              <a
+                href="#"
+                className={`nav-desktop-link ${isWhatWeServeActive ? "active !text-primary-blue-600" : ""}`}
+                onClick={(e) => e.preventDefault()}
+              >
                 What We Serve
                 <ChevronDown className="nav-desktop-arrow" />
               </a>
@@ -107,11 +131,13 @@ export function Navbar() {
                       Enterprise Networks
                     </h4>
                     <div className="flex flex-col gap-1">
-                      {navData.whatWeServe.enterpriseNetworks.map((item, idx) => (
-                        <React.Fragment key={idx}>
-                          {renderNavLink(item, '!py-1 !text-xs')}
-                        </React.Fragment>
-                      ))}
+                      {navData.whatWeServe.enterpriseNetworks.map(
+                        (item, idx) => (
+                          <React.Fragment key={idx}>
+                            {renderNavLink(item, "!py-1 !text-xs")}
+                          </React.Fragment>
+                        ),
+                      )}
                     </div>
                   </div>
 
@@ -123,7 +149,7 @@ export function Navbar() {
                     <div className="flex flex-col gap-1">
                       {navData.whatWeServe.security.map((item, idx) => (
                         <React.Fragment key={idx}>
-                          {renderNavLink(item, '!py-1 !text-xs')}
+                          {renderNavLink(item, "!py-1 !text-xs")}
                         </React.Fragment>
                       ))}
                     </div>
@@ -137,7 +163,7 @@ export function Navbar() {
                     <div className="flex flex-col gap-1">
                       {navData.whatWeServe.collaboration.map((item, idx) => (
                         <React.Fragment key={idx}>
-                          {renderNavLink(item, '!py-1 !text-xs')}
+                          {renderNavLink(item, "!py-1 !text-xs")}
                         </React.Fragment>
                       ))}
                     </div>
@@ -151,7 +177,7 @@ export function Navbar() {
                     <div className="flex flex-col gap-1">
                       {navData.whatWeServe.elv.map((item, idx) => (
                         <React.Fragment key={idx}>
-                          {renderNavLink(item, '!py-1 !text-xs')}
+                          {renderNavLink(item, "!py-1 !text-xs")}
                         </React.Fragment>
                       ))}
                     </div>
@@ -165,7 +191,7 @@ export function Navbar() {
                     <div className="flex flex-col gap-1">
                       {navData.whatWeServe.smartUtilities.map((item, idx) => (
                         <React.Fragment key={idx}>
-                          {renderNavLink(item, '!py-1 !text-xs')}
+                          {renderNavLink(item, "!py-1 !text-xs")}
                         </React.Fragment>
                       ))}
                     </div>
@@ -176,23 +202,29 @@ export function Navbar() {
 
             {/* Brands */}
             <div className="nav-desktop-item">
-              <a href={navData.brandsHref} className="nav-desktop-link" target="_blank" rel="noopener noreferrer">
+              <Link
+                to="/brands"
+                className={`nav-desktop-link ${isBrandsActive ? "active !text-primary-blue-600 font-semibold" : ""}`}
+              >
                 Brands
-              </a>
+              </Link>
             </div>
 
             {/* Careers */}
             <div className="nav-desktop-item">
-              <a href={navData.careersHref} className="nav-desktop-link" target="_blank" rel="noopener noreferrer">
+              <Link
+                to="/careers"
+                className={`nav-desktop-link ${isCareersActive ? "active !text-primary-blue-600 font-semibold" : ""}`}
+              >
                 Careers
-              </a>
+              </Link>
             </div>
           </nav>
 
           {/* Right actions: Search + Enquire Button + Hamburger */}
           <div className="header-right-actions">
             {/* Search Trigger */}
-            <button 
+            <button
               className="search-trigger-btn"
               onClick={() => setSearchOpen(!searchOpen)}
               aria-label="Search site"
@@ -201,13 +233,13 @@ export function Navbar() {
             </button>
 
             {/* Enquire Now CTA Button */}
-            <a href={navData.enquireHref} className="enquire-nav-btn" target="_blank" rel="noopener noreferrer">
+            <Link to="/contact" className="enquire-nav-btn">
               Enquire Now
-            </a>
+            </Link>
 
             {/* Mobile Menu Hamburger */}
-            <button 
-              className="mobile-hamburger-btn" 
+            <button
+              className="mobile-hamburger-btn"
               onClick={() => setMobileMenuOpen(true)}
               aria-label="Open mobile menu"
             >
@@ -221,15 +253,15 @@ export function Navbar() {
           <div className="bg-white border-b border-gray-200 py-4 px-6 shadow-md transition-all">
             <div className="max-w-2xl mx-auto flex items-center gap-3">
               <Search size={18} className="text-gray-400" />
-              <input 
-                type="text" 
-                placeholder="Search products, solutions, technologies..." 
+              <input
+                type="text"
+                placeholder="Search products, solutions, technologies..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 autoFocus
                 className="w-full text-sm text-dark-navy focus:outline-none"
               />
-              <button 
+              <button
                 onClick={() => setSearchOpen(false)}
                 className="text-gray-400 hover:text-dark-navy"
               >
@@ -241,9 +273,9 @@ export function Navbar() {
       </header>
 
       {/* Mobile Drawer */}
-      <MobileMenu 
-        isOpen={mobileMenuOpen} 
-        onClose={() => setMobileMenuOpen(false)} 
+      <MobileMenu
+        isOpen={mobileMenuOpen}
+        onClose={() => setMobileMenuOpen(false)}
       />
     </>
   );
