@@ -42,8 +42,8 @@ export function Footer() {
             <a href="#" className="inline-block mb-6">
               <img
                 src={logo}
-                alt="Signellent Technologies"
-                className="h-10 w-auto object-contain brightness-0 invert"
+                alt="Silgate Secure"
+                className="h-10 w-auto object-contain"
               />
             </a>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
