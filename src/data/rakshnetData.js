@@ -464,5 +464,5 @@ export const footerData = {
     { name: "Chennai", icon: "https://signellent.com/wp-content/smush-webp/2022/02/Chennai-10x10.png.webp" },
     { name: "Hyderabad", icon: "https://signellent.com/wp-content/smush-webp/2022/02/Haydrabad-10x10.png.webp" }
   ],
-  copyright: "Copyright © 2026 Signellent Technologies Ltd."
+  copyright: "Copyright © 2026 Silgate Secure"
 };

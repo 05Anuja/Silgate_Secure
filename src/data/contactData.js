@@ -7,27 +7,27 @@ export const contactData = {
     {
       type: "phone",
       label: "Call Us Directly",
-      value: "+91 9967 730 225",
-      href: "tel:+919967730225",
+      value: "+91 8108810916",
+      href: "tel:+918108810916",
       detail: "Mon - Sat: 9:30 AM to 6:30 PM IST",
       highlight: true
     },
     {
       type: "email",
       label: "Official Inquiries",
-      value: "info@signellent.com",
-      href: "mailto:info@signellent.com",
+      value: "manoj@silgatehiring.com",
+      href: "mailto:manoj@silgatehiring.com",
       detail: "Direct enterprise response within 24h",
       highlight: false
     },
-    {
-      type: "location",
-      label: "India Head Office",
-      value: "Borivali, Mumbai - 400 066",
-      href: "#india-office",
-      detail: "Signellent Technologies Limited",
-      highlight: false
-    },
+    // {
+    //   type: "location",
+    //   label: "India Head Office",
+    //   value: "Borivali, Mumbai - 400 066",
+    //   href: "#india-office",
+    //   detail: "Signellent Technologies Limited",
+    //   highlight: false
+    // },
     {
       type: "support",
       label: "Enterprise Support",

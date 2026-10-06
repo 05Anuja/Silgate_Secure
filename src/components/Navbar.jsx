@@ -14,9 +14,7 @@ export function Navbar() {
 
   const isWhatWeDoActive = currentPath.includes("/what-we-do");
   const isWhatWeThinkActive =
-    currentPath === "/" ||
-    currentPath.includes("/rakshnet") ||
-    currentPath.includes("/prime");
+    currentPath.includes("/rakshnet") || currentPath.includes("/prime");
   const isWhatWeServeActive = currentPath.includes("/product-category");
   const isBrandsActive = currentPath.includes("/brands");
   const isCareersActive = currentPath.includes("/careers");

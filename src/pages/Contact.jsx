@@ -187,7 +187,7 @@ export function Contact() {
             </div>
 
             {/* Quick Contact Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+            {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
               {contactData.quickContacts.map((item, idx) => (
                 <div
                   key={idx}
@@ -230,7 +230,7 @@ export function Contact() {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -322,7 +322,7 @@ export function Contact() {
                     >
                       <span className="flex items-center gap-2">
                         <Mail size={14} className="text-primary-blue" />
-                        manoj@silgatehhiring.com
+                        manoj@silgatehiring.com
                       </span>
                       <ExternalLink size={12} className="text-gray-400" />
                     </a>

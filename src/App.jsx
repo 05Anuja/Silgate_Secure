@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 
 // Pages
+import SignellentHome from './pages/SignellentHome';
 import RakshNet from './pages/RakshNet';
 import PrimePage from './pages/WhatWeThink/PrimePage';
 import CategoryPage from './pages/WhatWeServe/CategoryPage';
@@ -27,8 +28,10 @@ export function App() {
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
+        {/* Signellent Landing / Home Page */}
+        <Route path="/" element={<SignellentHome />} />
+
         {/* RakshNet — Existing Platform Landing Page */}
-        <Route path="/" element={<RakshNet />} />
         <Route path="/rakshnet" element={<RakshNet />} />
         <Route path="/rakshnet/" element={<RakshNet />} />
 
